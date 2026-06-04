@@ -383,7 +383,7 @@ resource functionApp 'Microsoft.Web/sites@2023-12-01' = {
         }
         {
           name: 'WEBSITE_RUN_FROM_PACKAGE'
-          value: 'https://github.com/orcunsami/SOCRadar-Azure-Entra-ID/releases/download/v1.0.0/FunctionApp.zip'
+          value: 'https://github.com/Radargoger/SOCRadar-EntraID-Standalone/releases/download/v1.0.0/FunctionApp.zip'
         }
         {
           name: 'POLLING_SCHEDULE'

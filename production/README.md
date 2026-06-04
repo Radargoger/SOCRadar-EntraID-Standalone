@@ -4,7 +4,7 @@ Pulls leaked employee credentials from SOCRadar (Botnet, PII Exposure, VIP Prote
 
 ## Deploy
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Forcunsami%2FSOCRadar-Azure-Entra-ID%2Fv1.0.0%2Fproduction%2Fazuredeploy.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FRadargoger%2FSOCRadar-EntraID-Standalone%2Fv1.0.0%2Fproduction%2Fazuredeploy.json)
 
 1. Click **Deploy to Azure** above
 2. Fill the form (see [Parameters](#parameters))

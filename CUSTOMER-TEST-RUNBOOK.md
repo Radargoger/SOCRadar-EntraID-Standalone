@@ -74,7 +74,7 @@ Confirm to customer: "Alarms seeded. Ready for deploy."
 
 ## 3. Customer side — deploy via Deploy to Azure (15 min)
 
-1. Open the repo: `https://github.com/<socradar-org>/SOCRadar-Azure-Entra-ID`
+1. Open the repo: `https://github.com/Radargoger/SOCRadar-EntraID-Standalone`
 2. Click **Deploy to Azure** in the README.
 3. Fill the form:
    - **Workspace Name** — pick your existing Sentinel workspace, or any free name for a new one.

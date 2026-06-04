@@ -2,7 +2,7 @@
 
 This guide is for the SOCRadar engineer who will publish this integration to the SOCRadar GitHub organization (or any other namespace) so customers can deploy from your branded repository.
 
-The standalone bundle is currently namespaced to `orcunsami/SOCRadar-Azure-Entra-ID`. To republish under SOCRadar branding, follow the steps below.
+The standalone bundle is currently namespaced to `Radargoger/SOCRadar-EntraID-Standalone`. To republish under a different SOCRadar branding/namespace, follow the steps below.
 
 ## Prerequisites
 
@@ -37,13 +37,13 @@ Do **not** include `FunctionApp.zip` in the repository — it goes into a GitHub
 
 ## Step 3 — Find-and-replace the GitHub namespace
 
-The ARM template and README files contain references to `orcunsami/SOCRadar-Azure-Entra-ID`. Replace these with your namespace.
+The ARM template and README files contain references to `Radargoger/SOCRadar-EntraID-Standalone`. Replace these with your namespace.
 
 **Files to update:**
 
 1. **`production/azuredeploy.bicep`** — the `WEBSITE_RUN_FROM_PACKAGE` default URL:
    ```bicep
-   value: 'https://github.com/orcunsami/SOCRadar-Azure-Entra-ID/releases/download/v1.0.0/FunctionApp.zip'
+   value: 'https://github.com/Radargoger/SOCRadar-EntraID-Standalone/releases/download/v1.0.0/FunctionApp.zip'
    ```
    Change to:
    ```bicep
@@ -58,14 +58,14 @@ A quick sed pass:
 
 ```bash
 cd path/to/socradar-azure-entra-id
-grep -rl "orcunsami/SOCRadar-Azure-Entra-ID" . \
-  | xargs sed -i '' 's|orcunsami/SOCRadar-Azure-Entra-ID|SOCRadar-Inc/SOCRadar-Azure-Entra-ID|g'
+grep -rl "Radargoger/SOCRadar-EntraID-Standalone" . \
+  | xargs sed -i '' 's|Radargoger/SOCRadar-EntraID-Standalone|SOCRadar-Inc/SOCRadar-Azure-Entra-ID|g'
 ```
 
 Verify nothing else (e.g., `b0afca82-...` test App Registration ID) was missed:
 
 ```bash
-grep -rn "orcunsami" .
+grep -rn "Radargoger/SOCRadar-EntraID-Standalone" .
 ```
 
 Should return zero hits after the replace.
